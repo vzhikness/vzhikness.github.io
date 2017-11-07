@@ -1,5 +1,7 @@
 # Welcome to my personal page
 
-I'm a front-end developer. Looking for a job.
+Hi! My name is Anton Vakulenko. I live in Moscow, Russia. And I'm looking for a front-end development job.
 
-There is some info about me, my projects overview and contacts.
+Check out my page for my projects and contacts:
+
+[https://vzhikness.github.io](https://vzhikness.github.io)
