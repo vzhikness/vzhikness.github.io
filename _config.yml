@@ -15,9 +15,13 @@
 # in the templates via {{ site.myvariable }}.
 title: Антон Вакуленко
 email: vakulenko.anton@gmail.com
-description: Фронтэнд разработчик, бывший админ Оракл.
+description:
+  Фронтэнд разработчик, в прошлом админ Оракла. Сейчас ищу работу.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+theme: jekyll-theme-minimal
+
+# Social Networks
 twitter_username: vzhikness
 github_username:  vzhikness
-theme: jekyll-theme-minimal
+linkedin_username: antonvakulenko
