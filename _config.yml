@@ -17,10 +17,7 @@ lang: ru-RU
 title: Антон Вакуленко
 email: anton@avakulenko.ru
 description:
-  Фронтэнд веб-разработчик, в прошлом админ Оракла. С удовольствием
-  присоединюсь к вашей дружной команде разработчиков.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Фронтэнд разработчик. Ищу работу в&nbsp;Москве.
 theme: jekyll-theme-minimal
 
 # Social Networks
