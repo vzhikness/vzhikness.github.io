@@ -2,10 +2,15 @@
 layout: default
 ---
 
+## Мои проекты
 
-# Мои проекты
+### Сайт барбершопа
 
-### Сайт барбершопа Borodinsky
+HTML5, CSS3, фиксированная верстка
+
+[главная](/projects/barbershop) \| [прайс-лист](/projects/barbershop/price.html) \| [магазин](/projects/barbershop/shop.html) \| [карточка товара](/projects/barbershop/item.html)
+
+[![Скриншот барбершопа Бородинский](/assets/barbershop.png)](/projects/barbershop)
 
 ### Сайт для курорта Sedona
 
