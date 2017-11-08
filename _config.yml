@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Антон Вакуленко
-email: vakulenko.anton@gmail.com
+email: anton@avakulenko.ru
 description:
   Фронтэнд веб-разработчик, в прошлом админ Оракла. С удовольствием
   присоединюсь к вашей дружной команде разработчиков.
