@@ -1,6 +1,7 @@
 /* General styles */
 body {
   background-color: #dbe2ec;
+  margin: 0;
 }
 
 .container {
@@ -8,7 +9,7 @@ body {
   width: 400px;
   height: 665px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 10px;
   font-family: 'Zilla Slab', serif;
   background-color: #f8f9fa;
