@@ -16,29 +16,41 @@
   <body>
     <div class="wrapper">
       <header>
-        <a href="{{ site.github.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
 
         {% if site.email %}
           <p class="view"><a href="{{ 'mailto:' | append: site.email }}">{{ site.email }}</a></p>
         {% endif %}
 
         {% if site.github_username %}
-          <p class="view"><a href="{{ 'https://www.github.com/' | append: site.github_username }}">GitHub</a></p>
+          <a class="social" href="{{ 'https://www.github.com/' | append: site.github_username }}">
+            <img class="i-github" src="/assets/img/i-github.svg" alt="GitHub" title="GitHub">
+          </a>
+        {% endif %}
+
+        {% if site.telegram_username %}
+          <a class="social" href="{{ 'https://telegram.me/' | append: site.telegram_username }}">
+            <img class="i-telegram" src="/assets/img/i-telegram.svg" alt="Telegram" title="Telegram">
+          </a>
         {% endif %}
 
         {% if site.linkedin_username %}
-          <p class="view"><a href="{{ 'https://www.linkedin.com/in/' | append: site.linkedin_username }}">LinkedIn</a></p>
+          <a class="social" href="{{ 'https://www.linkedin.com/in/' | append: site.linkedin_username }}">
+            <img class="i-linkedin" src="/assets/img/i-linkedin.svg" alt="LinkedIn" title="LinkedIn">
+          </a>
         {% endif %}
 
         {% if site.facebook_username %}
-          <p class="view"><a href="{{ 'https://www.facebook.com/' | append: site.facebook_username }}">Facebook</a></p>
+          <a class="social" href="{{ 'https://www.facebook.com/' | append: site.facebook_username }}">
+            <img class="i-facebook" src="/assets/img/i-facebook.svg" alt="Facebook" title="Facebook">
+          </a>
         {% endif %}
 
-        <p class="view"><a href="https://htmlacademy.ru/profile/vzhikness">HTML Academy</a></p>
-
-        <p class="view"><a href="https://www.freecodecamp.org/vzhikness">freeCodeCamp</a></p>
-
+        {% if site.twitter_username %}
+          <a class="social" href="{{ 'https://www.twitter.com/' | append: site.twitter_username }}">
+            <img class="i-twitter" src="/assets/img/i-twitter.svg" alt="Twitter" title="Twitter">
+          </a>
+        {% endif %}
       </header>
       <section>
 
@@ -46,7 +58,7 @@
 
       </section>
       <footer>
-        <p><small>Работает на GitHub Pages &mdash; Оформление от <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Сайт работает на GitHub Pages &mdash; Тема от <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
