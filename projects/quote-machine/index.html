@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class=''>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Random Quote Machine</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400italic" rel="stylesheet" type="text/css">
+    <style>
+    body {
+      width: 700px;
+      margin: auto;
+      font-family: "Merriweather", serif;
+      text-align: center;
+    }
+    .btn-new-quote {
+      width: 200px;
+      height: 25px;
+      font-size: .75em;
+    }
+    .quote {
+      background: #e9e9e2;
+      margin: 20px 0;
+      padding: 5px 25px;
+      line-height: 1.7;
+    }
+    .quote-author {
+      font-style: italic;
+      text-align: right;
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Random Quote Machine</h1>
+    <p>These are quotes from my favourite movie <a href="https://en.wikipedia.org/wiki/Am%C3%A9lie">Amélie</a>.</p>
+    <button class="btn-new-quote">New Quote</button>
+    <div class="quote">
+      <p class="quote-text"></p>
+      <p class="quote-author"></p>
+    </div>
+
+    <script >
+      // http://www.imdb.com/title/tt0211915/quotes
+      var quotes = [
+        {quote: "Without you, today's emotions would be the scurf of yesterday's.", author: "Hipolito, The Writer"},
+        {quote: "At least you'll never be a vegetable - even artichokes have hearts.", author: "Amélie Poulain"},
+        {quote: "Amelie has a strange feeling of absolute harmony. It's a perfect moment. A soft light, a scent in the air, the quiet murmur of the city. A surge of love, an urge to help mankind overcomes her.", author: "Narrator"},
+        {quote: "Nino is late. Amelie can only see two explanations. 1 - he didn't get the photo. 2 - before he could assemble it, a gang of bank robbers took him hostage. The cops gave chase. They got away... but he caused a crash. When he came to, he'd lost his memory. An ex-con picked him up, mistook him for a fugitive, and shipped him to Istanbul. There he met some Afghan raiders who too him to steal some Russian warheads. But their truck hit a mine in Tajikistan. He survived, took to the hills, and became a Mujaheddin. Amelie refuses to get upset for a guy who'll eat borscht all his life in a hat like a tea cozy.", author: "Narrator"},
+        {quote: "Life's funny. To a kid, time always drags. Suddenly you're fifty. All that's left of your childhood... fits in a rusty little box.", author: "Bretodeau, The Box Man"},
+        {quote: "Lady Di! Lady Di! Renoir!", author: "Raymond Dufayel aka Glass Man"},
+        {quote: "We pass the time of day to forget how time passes.", author: "Hipolito, The Writer"},
+        {quote: "A woman without love wilts like a flower without sun.", author: "The Newsstand Woman"},
+        {quote: "[to her father, who is not paying attention] I had two heart attacks, an abortion, did crack... while I was pregnant. Other than that, I'm fine.", author: "Amélie"},
+        {quote: "[Amélie hands a begger some money]<br> Sorry madam, I don't work on Sundays.", author: "Beggar"},
+        {quote: "On September 3rd 1973, at 6:28pm and 32 seconds, a bluebottle fly capable of 14,670 wing beats a minute landed on Rue St Vincent, Montmartre. At the same moment, on a restaurant terrace nearby, the wind magically made two glasses dance unseen on a tablecloth. Meanwhile, in a 5th-floor flat, 28 Avenue Trudaine, Paris 9, returning from his best friend's funeral, Eugène Colère erased his name from his address book. At the same moment, a sperm with one X chromosome, belonging to Raphaël Poulain, made a dash for an egg in his wife Amandine. Nine months later, Amélie Poulain was born.", author: "Narrator"},
+        {quote: "She doesn't relate to other people. She was always a lonely child.", author: "Amélie Poulain"}
+      ];
+
+      function showQuote() {
+        var randomInt = Math.floor(Math.random() * quotes.length);
+        var quoteText = document.getElementsByClassName("quote-text")[0];
+        var quoteAuthor = document.getElementsByClassName("quote-author")[0];
+        quoteText.innerHTML = quotes[randomInt].quote;
+        quoteAuthor.textContent = "— " + quotes[randomInt].author;
+      }
+
+      // $(document).ready() alternative
+      (function ready(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
+          fn();
+        } else {
+          document.addEventListener("DOMContentLoaded", fn);
+        }
+        var btn = document.getElementsByClassName("btn-new-quote")[0];
+        btn.addEventListener("click", showQuote);
+      })(showQuote);
+    </script>
+  </body>
+</html>
