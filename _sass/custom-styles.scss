@@ -1,0 +1,13 @@
+.social {
+  display: inline-block;
+  width: 36px;
+  opacity: 0.5;
+}
+
+.social:hover {
+  opacity: 1;
+}
+
+.social:first-of-type {
+  margin-left: -6px;
+}

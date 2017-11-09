@@ -5,7 +5,7 @@ body {
   background-color: #fff;
   padding:50px;
   // font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font: 14px/1.5 "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 15px/1.5 "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -37,13 +37,11 @@ h3, h4, h5, h6 {
 
 a {
   color:#267CB9;
-  text-decoration:none;
 }
 
 a:hover, a:focus {
   color:#069;
-  // font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a small {
@@ -112,6 +110,7 @@ header {
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+  text-align:center;
 }
 
 header ul {
@@ -175,7 +174,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:540px;
   float:right;
   padding-bottom:50px;
 }
@@ -273,3 +272,5 @@ footer {
     color:#444;
   }
 }
+
+@import "custom-styles";
