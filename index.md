@@ -50,11 +50,9 @@ HTML5, CSS3, резиновая верстка
 
 Vanilla JS
 
-[главная](/projects/quote-machine)
-
 [![Скриншот машины рандомных цитат](/assets/img/quote-machine.png)](/projects/quote-machine)
 
-### Страница   барбершопа
+### Страница барбершопа
 
 HTML5, CSS3, фиксированная верстка
 
@@ -65,16 +63,21 @@ HTML5, CSS3, фиксированная верстка
 
 [![Скриншот страницы барбершопа Бородинский](/assets/img/barbershop.png)](/projects/barbershop)
 
+### Страница об Антони Гауди
+
+Bootstrap 3
+
+[![Скриншот страницы об Антони Гауди](/assets/img/tribute-page.png)](/projects/tribute-page)
+
+
 ### Интерфейс мобильного блога
 
 HTML5, CSS3, фиксированная верстка
 
-[главная](/projects/mobile-blog)
-
 [![Скриншот страницы мобильного блога](/assets/img/mobile-blog.png)](/projects/mobile-blog)
 
 
-<!-- ### Страница об Антони Гауди
+<!--
 
 ### Просмотрщик Википедии
 
@@ -82,4 +85,6 @@ HTML5, CSS3, фиксированная верстка
 
 ### Местная погода
 
-### Статус каналов Twitch.tv -->
+### Статус каналов Twitch.tv
+
+-->
