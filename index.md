@@ -21,11 +21,7 @@ layout: default
 Комфортно чувствую себя в&nbsp;командной строке Linux. Использую Git.
 Знаком с&nbsp;Photoshop на уровне верстальщика.
 
-### Что хочу
-
-Найти работу в команде хороших разработчиков, расти и&nbsp;развиваться вместе
-с&nbsp;ними, стать крутым фронтенд разработчиком, решать проблемы заказчиков и
-приносить пользу компании.
+[Посмотреть мои поделки](projects)
 
 ### Где учился
 
@@ -33,54 +29,8 @@ layout: default
 - 2014 --- Интенсив HTML Академии
 - 2015--2017 --- Курсы HTML Академии и freeCodeCamp
 
+### Что хочу
 
-
-## Проекты
-
-
-### Страница курорта Седона
-
-HTML5, CSS3, резиновая верстка
-
-[главная](/projects/sedona) \|
-[выбор гостиницы](/projects/sedona/hotels.html)
-
-[![Скриншот страницы курорта Седона](/assets/img/sedona.png)](/projects/sedona)
-
-
-### Местная погода
-
-jQuery, openweathermap.org API, ip-api.com API
-
-[![Скриншот страницы местной погоды](/assets/img/local-weather.png)](/projects/local-weather)
-
-
-### Машина рандомных цитат
-
-Vanilla JS
-
-[![Скриншот машины рандомных цитат](/assets/img/quote-machine.png)](/projects/quote-machine)
-
-
-### Страница барбершопа
-
-HTML5, CSS3, фиксированная верстка
-
-[главная](/projects/barbershop) \|
-[прайс-лист](/projects/barbershop/price.html) \|
-[магазин](/projects/barbershop/shop.html) \|
-[карточка товара](/projects/barbershop/item.html)
-
-[![Скриншот страницы барбершопа Бородинский](/assets/img/barbershop.png)](/projects/barbershop)
-
-### Интерфейс мобильного блога
-
-HTML5, CSS3, фиксированная верстка
-
-[![Скриншот страницы мобильного блога](/assets/img/mobile-blog.png)](/projects/mobile-blog)
-
-### Страница об Антони Гауди
-
-Bootstrap 3
-
-[![Скриншот страницы об Антони Гауди](/assets/img/tribute-page.png)](/projects/tribute-page)
+Найти работу в команде хороших разработчиков, расти и&nbsp;развиваться вместе
+с&nbsp;ними, стать крутым фронтенд разработчиком, решать проблемы заказчиков и
+приносить пользу компании.
