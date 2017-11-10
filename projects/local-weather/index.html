@@ -43,9 +43,10 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script>
     function showWeather(data) {
+
       var cel, fah;
-      cel = Math.round(Number(data.main.temp));
-      fah = Math.round(1.8*Number(data.main.temp) + 32);
+      cel = Number(data.main.temp) - 273.15;
+      fah = 1.8*(Number(data.main.temp) - 273.15) + 32;
 
       $('.loader').hide();
 
@@ -61,18 +62,15 @@
       $('.icon').attr({
         width: '50px',
         height: '50px',
-        src: data.weather[0].icon,
+        // src: data.weather[0].icon,
         alt: data.weather[0].main,
         title: data.weather[0].main
       });
     }
 
     function handleCoords(data) {
-      var lat, lon;
-      lat = data.coords.latitude;
-      lon = data.coords.longitude;
-      $.getJSON('https://fcc-weather-api.glitch.me/api/current?lat=' + lat +
-                '&lon=' + lon, handleWeather);
+      $.getJSON('http://api.openweathermap.org/data/2.5/weather?APPID=2107fc0a252cf77473a049cee6cf773f&lat=' +
+                 data.lat + '&lon=' + data.lon, handleWeather);
     }
 
     function handleWeather(data) {
@@ -80,11 +78,7 @@
     }
 
     $(document).ready(function () {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(handleCoords);
-      } else {
-        console.log('Geolocation is not supported.');
-      }
+      $.getJSON('http://ip-api.com/json', handleCoords);
     });
   </script>
   </body>
