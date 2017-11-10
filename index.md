@@ -37,6 +37,7 @@ layout: default
 
 ## Проекты
 
+
 ### Страница курорта Седона
 
 HTML5, CSS3, резиновая верстка
@@ -46,11 +47,20 @@ HTML5, CSS3, резиновая верстка
 
 [![Скриншот страницы курорта Седона](/assets/img/sedona.png)](/projects/sedona)
 
+
+### Местная погода
+
+jQuery, openweathermap.org API, ip-api.com API
+
+[![Скриншот страницы местной погоды](/assets/img/local-weather.png)](/projects/local-weather)
+
+
 ### Машина рандомных цитат
 
 Vanilla JS
 
 [![Скриншот машины рандомных цитат](/assets/img/quote-machine.png)](/projects/quote-machine)
+
 
 ### Страница барбершопа
 
@@ -63,28 +73,14 @@ HTML5, CSS3, фиксированная верстка
 
 [![Скриншот страницы барбершопа Бородинский](/assets/img/barbershop.png)](/projects/barbershop)
 
-### Страница об Антони Гауди
-
-Bootstrap 3
-
-[![Скриншот страницы об Антони Гауди](/assets/img/tribute-page.png)](/projects/tribute-page)
-
-
 ### Интерфейс мобильного блога
 
 HTML5, CSS3, фиксированная верстка
 
 [![Скриншот страницы мобильного блога](/assets/img/mobile-blog.png)](/projects/mobile-blog)
 
+### Страница об Антони Гауди
 
-<!--
+Bootstrap 3
 
-### Просмотрщик Википедии
-
-### Простой калькулятор
-
-### Местная погода
-
-### Статус каналов Twitch.tv
-
--->
+[![Скриншот страницы об Антони Гауди](/assets/img/tribute-page.png)](/projects/tribute-page)
