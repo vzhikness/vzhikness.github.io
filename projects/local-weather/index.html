@@ -40,7 +40,7 @@
   <div class="container">
     <h1>Local Weather</h1>
     <img class="loader" src="img/loader.svg" width="180">
-    <h2 class="city"></h2>
+    <h3 class="city"></h3>
     <div class="temp cel"></div>
     <div class="temp fah hide"></div>
     <div class="weather"></div>
@@ -110,8 +110,7 @@
       $('.weather').text(data.weather[0].main);
 
       $('.icon').attr({
-        width: '200',
-        // height: '156',
+        width: '180',
         src: 'img/' + getIcon(data.weather[0].icon) + '.svg',
         alt: data.weather[0].main,
         title: data.weather[0].main
