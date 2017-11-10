@@ -6,63 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Local Weather</title>
     <style class="cp-pen-styles">
+      body {
+        font-family: "Lucida Grande", "Tahoma", sans-serif;
+        font-size: 1.5em;
+      }
       .container {
-        font-family: "Lucida Grande", "Tahoma";
-        font-size: 1.3em;
-        width: 300px;
+        width: 70%;
         margin: 0 auto;
         text-align: center;
       }
       .hide {
         display: none;
       }
-      .weather .icon {
-        position: relative;
-        bottom: -20px;
+      .temp,
+      .weather {
+        line-height: 1.4;
       }
-      .weather a {
+      .icon {
+        display: block;
+        margin: 0 auto;
+      }
+      a.switcher {
         text-decoration: none;
-        padding: 5px 5px 5px 0;
+        /*padding: 5px 5px 5px 0;*/
       }
-      .weather a:visited {
+      a.switcher:visited {
         color: #0000ee;
+        text-decoration: none;
       }
     </style>
   </head>
 <body>
   <div class="container">
     <h1>Local Weather</h1>
-    <img class="loader" src="img/loader.svg" width="60">
-    <div class="city"></div>
-    <div class="weather">
-      <img class="icon"></img>
-      <span class="temp-cel"></span>
-      <span class="temp-fah hide"></span>
-    </div>
+    <img class="loader" src="img/loader.svg" width="180">
+    <h2 class="city"></h2>
+    <div class="temp cel"></div>
+    <div class="temp fah hide"></div>
+    <div class="weather"></div>
+    <img class="icon"></img>
   </div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script>
-    function showWeather(data) {
+    function getIcon(code) {
+      switch (code) {
+        case '01d':
+          return 'clear-d';
+          break;
+        case '01n':
+          return 'clear-n';
+          break;
+        case '02d':
+          return 'cloudy-d';
+          break;
+        case '02n':
+          return 'cloudy-n';
+          break;
+        case '03d':
+        case '03n':
+        case '04d':
+        case '04n':
+          return 'clouds';
+          break;
+        case '09d':
+        case '09n':
+          return 'shower';
+          break;
+        case '10d':
+        case '10n':
+          return 'rain';
+          break;
+        case '11d':
+        case '11n':
+          return 'storm';
+          break;
+        case '13d':
+        case '13n':
+          return 'snow';
+          break;
+        case '50d':
+        case '50n':
+          return 'mist';
+          break;
+      }
+    }
 
+    function showWeather(data) {
       var cel, fah;
-      cel = Number(data.main.temp) - 273.15;
-      fah = 1.8*(Number(data.main.temp) - 273.15) + 32;
+      cel = Math.round(Number(data.main.temp) - 273.15);
+      fah = Math.round(1.8*(Number(data.main.temp) - 273.15) + 32);
 
       $('.loader').hide();
 
       $('.city').text(data.name + ', ' + data.sys.country);
 
-      $('.temp-cel').html(cel + '°<a href="#" title="Switch to Fahrenheit">C</a>');
-      $('.temp-fah').html(fah + '°<a href="#" title="Switch to Celcius">F</a>');
-      $('.weather a').on('click', function() {
-        $('.temp-cel').toggleClass('hide');
-        $('.temp-fah').toggleClass('hide');
+      $('.cel').html(cel + '°<a class="switcher" href="#" title="Switch to Fahrenheit">C</a>');
+      $('.fah').html(fah + '°<a class="switcher" href="#" title="Switch to Celcius">F</a>');
+      $('.switcher').on('click', function() {
+        $('.cel').toggleClass('hide');
+        $('.fah').toggleClass('hide');
       });
 
+      $('.weather').text(data.weather[0].main);
+
       $('.icon').attr({
-        width: '50px',
-        height: '50px',
-        // src: data.weather[0].icon,
+        width: '200',
+        // height: '156',
+        src: 'img/' + getIcon(data.weather[0].icon) + '.svg',
         alt: data.weather[0].main,
         title: data.weather[0].main
       });
