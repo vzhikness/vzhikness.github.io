@@ -14,15 +14,16 @@
 
       {% include footer.html %}
 
-      {% if jekyll.environment == 'production' and site.yandex_metrika %}
-        {% include yandex-metrika.html %}
-      {% endif %}
-
-      {% if jekyll.environment == 'production' and site.google_analytics %}
-        {% include google-analytics.html %}
-      {% endif %}
-
     </div>
+    
+    {% if jekyll.environment == 'production' and site.yandex_metrika %}
+      {% include yandex-metrika.html %}
+    {% endif %}
+
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
+
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>
