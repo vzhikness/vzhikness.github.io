@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-  {% include head.html %}
+{% include head.html %}
 
   <body>
     <div class="wrapper">
@@ -13,6 +13,14 @@
       </section>
 
       {% include footer.html %}
+
+      {% if jekyll.environment == 'production' and site.yandex_metrika %}
+        {% include yandex-metrika.html %}
+      {% endif %}
+
+      {% if jekyll.environment == 'production' and site.google_analytics %}
+        {% include google-analytics.html %}
+      {% endif %}
 
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
