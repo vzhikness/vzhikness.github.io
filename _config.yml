@@ -19,6 +19,7 @@ description: Фронтенд разработчик
 email: anton@avakulenko.ru
 url: http://avakulenko.ru
 theme: jekyll-theme-minimal
+yandex_metrika: true
 
 # Social Networks
 github:
