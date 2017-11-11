@@ -15,14 +15,26 @@
 # in the templates via {{ site.myvariable }}.
 lang: ru-RU
 title: Антон Вакуленко
+description: Фронтенд разработчик
 email: anton@avakulenko.ru
-description: Ищу работу в Москве
 url: http://avakulenko.ru
 theme: jekyll-theme-minimal
 
 # Social Networks
-twitter_username: vzhikness
-github_username:  vzhikness
-facebook_username: vzhikness
-linkedin_username: antonvakulenko
-telegram_username: vzhikness
+github:
+  username:  vzhikness
+twitter:
+  username: vzhikness
+facebook:
+  username: vzhikness
+linkedin:
+  username: antonvakulenko
+telegram:
+  username: vzhikness
+social:
+  name: Anton Vakulenko
+  links:
+    - https://twitter.com/vzhikness
+    - https://www.facebook.com/vzhikness
+    - https://www.linkedin.com/in/antonvakulenko
+    - https://www.github.com/vzhikness
