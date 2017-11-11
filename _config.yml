@@ -6,7 +6,7 @@
 # Site settings
 lang: ru-RU
 title: Антон Вакуленко
-description: Фронтенд разработчик
+description: Фронтенд разработчик. Ищу работу в Москве.
 email: anton@avakulenko.ru
 url: http://avakulenko.ru
 theme: jekyll-theme-minimal
@@ -25,10 +25,10 @@ linkedin:
   username: antonvakulenko
 telegram:
   username: vzhikness
-social:
-  name: Anton Vakulenko
-  links:
-    - https://twitter.com/vzhikness
-    - https://www.facebook.com/vzhikness
-    - https://www.linkedin.com/in/antonvakulenko
-    - https://www.github.com/vzhikness
+# social:
+#   name: Anton Vakulenko
+#   links:
+#     - https://twitter.com/vzhikness
+#     - https://www.facebook.com/vzhikness
+#     - https://www.linkedin.com/in/antonvakulenko
+#     - https://www.github.com/vzhikness
