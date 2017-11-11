@@ -1,0 +1,37 @@
+<header>
+  <h1><a href="{{ site.url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+  {% if site.email %}
+    <p class="view"><a href="{{ 'mailto:' | append: site.email }}">{{ site.email }}</a></p>
+  {% endif %}
+
+  {% if site.github.username %}
+    <a class="social" href="{{ 'https://www.github.com/' | append: site.github.username }}">
+      <img class="i-github" src="{{ '/assets/img/i-github.svg' | relative_url }}" alt="GitHub" title="GitHub">
+    </a>
+  {% endif %}
+
+  {% if site.telegram.username %}
+    <a class="social" href="{{ 'https://telegram.me/' | append: site.telegram.username }}">
+      <img class="i-telegram" src="{{ '/assets/img/i-telegram.svg' | relative_url }}" alt="Telegram" title="Telegram">
+    </a>
+  {% endif %}
+
+  {% if site.linkedin.username %}
+    <a class="social" href="{{ 'https://www.linkedin.com/in/' | append: site.linkedin.username }}">
+      <img class="i-linkedin" src="{{ '/assets/img/i-linkedin.svg' | relative_url }}" alt="LinkedIn" title="LinkedIn">
+    </a>
+  {% endif %}
+
+  {% if site.facebook.username %}
+    <a class="social" href="{{ 'https://www.facebook.com/' | append: site.facebook.username }}">
+      <img class="i-facebook" src="{{ '/assets/img/i-facebook.svg' | relative_url }}" alt="Facebook" title="Facebook">
+    </a>
+  {% endif %}
+
+  {% if site.twitter.username %}
+    <a class="social" href="{{ 'https://www.twitter.com/' | append: site.twitter.username }}">
+      <img class="i-twitter" src="{{ '/assets/img/i-twitter.svg' | relative_url}}" alt="Twitter" title="Twitter">
+    </a>
+  {% endif %}
+</header>
