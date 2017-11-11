@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Антон Вакуленко
+layout: default
 ---
 
 ## Фронтенд разработчик
