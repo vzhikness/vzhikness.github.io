@@ -5,7 +5,7 @@
 
   <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
 
-
+  {% seo title=false %}
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext">
