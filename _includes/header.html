@@ -37,5 +37,8 @@
     {% endif %}
   </div>
 
-  <img class="portrait" src="{{ '/assets/img/anton-400.jpg' | relative_url }}" alt="Фотография Антона Вакуленко">
+  <img class="portrait"
+       srcset="{{ '/assets/img/anton.jpg' | relative_url }},
+               {{ '/assets/img/anton-2x.jpg' | relative_url }} 2x"
+       src="{{ '/assets/img/anton-2x.jpg' | relative_url }}" alt="Фотография Антона Вакуленко">
 </header>
