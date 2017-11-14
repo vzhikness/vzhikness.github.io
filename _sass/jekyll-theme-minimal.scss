@@ -228,9 +228,13 @@ footer {
 
 @media print {
   body {
-    padding:0.4in;
+    padding:0.3in;
     font-size:12pt;
     color:#444;
+  }
+
+  section {
+    border-bottom: none;
   }
 
   footer {
