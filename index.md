@@ -1,7 +1,7 @@
 ---
 title: Антон Вакуленко
 layout: default
-image: /assets/img/anton-400.jpg
+image: /assets/img/anton-2x.jpg
 ---
 
 ## Фронтенд разработчик
@@ -10,8 +10,10 @@ image: /assets/img/anton-400.jpg
 
 ### Моя история
 
-С 2010 года работал админом БД и приложений Oracle. В&nbsp;2014 начал
-курсы HTML Академии, успешно прошел [интенсив](https://htmlacademy.ru/profile/vzhikness).
+С 2010 года работал админом БД и приложений Oracle. В 2012 году переехал в
+Москву и&nbsp;устроился в консалтинговую компанию AT Consulting.
+
+В&nbsp;2014 начал курсы HTML Академии, успешно прошел [интенсив](https://htmlacademy.ru/profile/vzhikness).
 В&nbsp;2015 присоединился к сообществу [freeCodeCamp](https://www.freecodecamp.org/vzhikness).
 
 С тех пор продолжал работать админом, но все больше и больше интересовался
@@ -21,7 +23,7 @@ image: /assets/img/anton-400.jpg
 
 Читаю, говорю и&nbsp;пишу на английском. Знаю HTML5, CSS3, JavaScript.
 Комфортно чувствую себя в&nbsp;командной строке Linux. Использую Git.
-Знаком с&nbsp;Photoshop на уровне верстальщика.
+Знаю Photoshop на уровне верстальщика.
 
 [Посмотреть мои поделки](projects)
 
