@@ -1,7 +1,7 @@
 ---
 title: Антон Вакуленко
 layout: default
-image: /assets/img/anton-2x.jpg
+image: /assets/img/anton-1200.jpg
 ---
 
 ## Фронтенд разработчик
