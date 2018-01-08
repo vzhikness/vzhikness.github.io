@@ -6,7 +6,7 @@ image: /assets/img/anton-1200.jpg
 
 ## Фронтенд разработчик
 
-Меня зовут Антон и я работаю в [UCHi.ru](https://uchi.ru/).
+Меня зовут Антон и я работаю в [UCHi.RU](https://uchi.ru/).
 
 ### Моя история
 
