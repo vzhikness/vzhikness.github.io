@@ -6,7 +6,7 @@ image: /assets/img/anton-1200.jpg
 
 ## Фронтенд разработчик
 
-Меня зовут Антон и я работаю JS-разработчиком в [UCHi.RU](https://uchi.ru/).
+Меня зовут Антон и я работаю фронтенд разработчиком в [Bayer](https://www.bayer.ru).
 
 ### Моя история
 
@@ -16,13 +16,11 @@ image: /assets/img/anton-1200.jpg
 В&nbsp;2014 начал курсы HTML Академии, успешно прошел [интенсив](https://htmlacademy.ru/profile/vzhikness).
 В&nbsp;2015 присоединился к сообществу [freeCodeCamp](https://www.freecodecamp.org/vzhikness).
 
-С тех пор продолжал работать админом, но все больше интересовался вебом.
-В ноябре 2017 ушел с&nbsp;прежней работы и занялся разработкой.
+В ноябре 2017 стал JS-разработчиком в компании UCHi.RU.
 
 ### Что умею
 
-Читаю, говорю и&nbsp;пишу на английском. Знаю HTML5, CSS3, люблю JavaScript ES6+.
-Комфортно чувствую себя в&nbsp;командной строке Linux (bash). Использую Git.
+Читаю, говорю и&nbsp;пишу на английском. Знаю HTML5, CSS3, люблю JavaScript ES6+. Смогу сделать бекенд на Node.js или на AWS Lambda/API Gateway/DynamoDB. Есть опыт работы с Docker и GitLab CI/CD. Комфортно чувствую себя в&nbsp;командной строке Linux (bash). Использую Git.
 Верстаю макеты из Figma/Zeplin/Photoshop.
 
 [Посмотреть мои работы](projects)
